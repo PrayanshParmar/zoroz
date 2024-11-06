@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4">Today's Deals</h2>
+        <h2 className="text-2xl font-semibold mb-4">Today&apos;s Deals</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {isLoading ? (
             <div>loading</div>

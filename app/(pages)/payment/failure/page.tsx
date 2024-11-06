@@ -15,8 +15,8 @@ export default function PaymentFailurePage() {
         </CardHeader>
         <CardContent>
           <p className="text-center mb-6">
-            We're sorry, but there was an issue processing your payment. Please
-            try again or contact customer support.
+            We&apos;re sorry, but there was an issue processing your payment.
+            Please try again or contact customer support.
           </p>
           <Link href="/checkout" passHref>
             <Button className="w-full">Try Again</Button>

@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { StarIcon, Check, Truck } from "lucide-react";
+import { Check, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
-import { ProductCardType, ProductData } from "@/lib/types/query";
+import { ProductData } from "@/lib/types/query";
 import { getSingleProduct } from "@/lib/backend-query/query";
 import Spinner from "@/components/custom-ui/spinner";
 import formatDate from "@/lib/format-date";

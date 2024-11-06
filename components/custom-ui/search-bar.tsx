@@ -1,14 +1,4 @@
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-  CommandShortcut,
-} from "@/components/ui/command";
-import { CalendarIcon, RocketIcon, ScanFaceIcon } from "lucide-react";
+import { Command, CommandInput } from "@/components/ui/command";
 
 const SearchBar = () => {
   return (

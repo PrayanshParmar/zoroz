@@ -2,7 +2,7 @@
 
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { getProductByCategory } from "@/lib/backend-query/query";
-import { ProductCardType, ProductData } from "@/lib/types/query";
+import { ProductCardType } from "@/lib/types/query";
 import ProductCard from "@/components/custom-ui/product-card";
 import { StarIcon } from "lucide-react";
 import Link from "next/link";
@@ -104,6 +104,7 @@ export default function CategoryPage({
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {products?.map((products) => (
                   <ProductCard
+                    key={products.id}
                     id={products.id}
                     title={products.title}
                     thumbnail={products.thumbnail}

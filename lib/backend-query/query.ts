@@ -1,3 +1,5 @@
+// Products Api functions ------------------------------------------------------
+
 export async function getCategoryList() {
   const response = await fetch("https://dummyjson.com/products/category-list");
 
@@ -77,6 +79,8 @@ export async function getSingleProduct(id: string) {
   return resData;
 }
 
+// Cart Api functions -----------------------------------------------------------
+
 export async function getAllCartProducts() {
   const response = await fetch(`https://dummyjson.com/carts?limit=5`);
 
@@ -94,6 +98,9 @@ export async function getAllCartProducts() {
   const resData = await response.json();
   return resData.carts;
 }
+
+// Payment Api functions ----------------------------------------------------------
+
 export async function mockPayment() {
   const success = Math.random() > 0.5;
   if (success) {
