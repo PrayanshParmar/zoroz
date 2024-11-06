@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mock eCommerce Website
 
-## Getting Started
+This project is a mock eCommerce website built to simulate the user experience of an online store, similar to Amazon. It includes features such as product browsing, checkout, and payment success/failure pages, using mock APIs to load product data and complete the transaction process.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Homepage**: Displays featured or popular products.
+2. **Product Listing Page**: Showcases products in categories or lists, with filters for easy browsing.
+3. **Product Detail Page**: Displays detailed information about a product.
+4. **Checkout Page**: Allows users to input shipping details and view a summary of their order.
+5. **Payment Success/Failure Page**: Simulates a payment transaction and shows either a success or failure page based on the randomness.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can check out the live version of the mock eCommerce website here:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://zoroz-peach.vercel.app
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**:
+  - Next.js (for server-side rendering and routing)
+  - Tailwind CSS (for styling)
+- **Backend**:
+  - Mock APIs (e.g., DummyJSON ) for loading product data
+- **Routing**: Next.js dynamic routing for product and checkout pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup Instructions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+Make sure you have [Node.js](https://nodejs.org/) installed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Steps to Run Locally
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/PrayanshParmar/zoroz
+   cd zoroz
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and visit [http://localhost:3000](http://localhost:3000).
