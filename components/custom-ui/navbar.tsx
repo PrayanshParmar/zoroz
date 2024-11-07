@@ -1,4 +1,4 @@
-import { ShoppingCart, User } from "lucide-react";
+import { ShoppingCart, User, Package } from "lucide-react";
 import Link from "next/link";
 
 const NavBar = () => {
@@ -9,37 +9,24 @@ const NavBar = () => {
           <Link href="/" className="text-2xl font-bold">
             amazon
           </Link>
-          {/* <div className="flex-grow mx-4">
-            <form className="flex">
-              <Input
-                type="search"
-                placeholder="Search Amazon"
-                className="w-full rounded-l-md"
-              />
-              <Button
-                type="submit"
-                className="bg-yellow-400 hover:bg-yellow-500 text-black rounded-r-md"
-              >
-                <Search className="h-5 w-5" />
-              </Button>
-            </form>
-          </div> */}
-          {/* <SearchBar></SearchBar> */}
           <nav>
-            <ul className="flex space-x-4">
+            <ul className="flex space-x-2 sm:space-x-4">
               <li>
                 <Link href="/account" className="flex items-center">
-                  <User className="mr-1" /> Account
+                  <User className="mr-1" />
+                  <span className="hidden sm:block">Account</span>
                 </Link>
               </li>
               <li>
                 <Link href="/orders" className="flex items-center">
-                  Orders
+                  <Package className="mr-1" />
+                  <span className="hidden sm:block">Orders</span>
                 </Link>
               </li>
               <li>
                 <Link href="/cart" className="flex items-center">
-                  <ShoppingCart className="mr-1" /> Cart
+                  <ShoppingCart className="mr-1" />
+                  <span className="hidden sm:block">Cart</span>
                 </Link>
               </li>
             </ul>
