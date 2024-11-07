@@ -158,7 +158,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                     <div className="flex items-center mb-2">
                       <RatingStars rating={review.rating} />
                       <span className="ml-2 text-gray-600 text-sm">
-                        `Reviewed on {formatDate(review.date)}`
+                        Reviewed on {formatDate(review.date)}
                       </span>
                     </div>
                     <p>{review.comment}</p>
