@@ -5,6 +5,7 @@ import { ProductData } from "@/lib/types/query";
 import PromoCarousal from "@/components/custom-ui/promo-carousal";
 import ProductCard from "@/components/custom-ui/product-card";
 import CategoryCard from "@/components/custom-ui/category-card";
+import Spinner from "@/components/custom-ui/spinner";
 
 const featuredCategories = [
   { name: "Laptops", image: "1", url: "laptops" },
@@ -42,7 +43,9 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4">Today&apos;s Deals</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {isLoading ? (
-            <div>loading</div>
+            <div className=" col-span-1 sm:col-span-2 md:col-span-4 flex justify-center ">
+              <Spinner />
+            </div>
           ) : dealProducts ? (
             <>
               {dealProducts.map((products) => (
